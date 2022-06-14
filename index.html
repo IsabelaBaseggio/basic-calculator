@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Document</title>
+        <link rel="icon" type="image/icon" href="./image/icon.PNG">
+    <title>BASIC CALCULATOR</title>
 </head>
 
 <body style="background-color: #deeaee;">
@@ -30,14 +31,14 @@
                 <input type="button" class="btn btn-danger col" value="C" id="clear">
                 <input type="button" class="btn btn-secondary col" value="&#8592" onclick="backSpace()">
                 <input type="button" class="btn btn-secondary col" value="%" onclick="document.calculator.display.value+='%'">
-                <input type="button" class="btn btn-secondary col" value="&divide" onclick="document.calculator.display.value+='&divide'">
+                <input type="button" class="btn btn-secondary col" value="&divide" onclick="document.calculator.display.value+='/'">
             </div>
 
             <div class="row gap-2 px-3 my-1">
                 <input type="button" class="btn btn-secondary col" value="7" onclick="seven()">
                 <input type="button" class="btn btn-secondary col" value="8" onclick="eight()">
                 <input type="button" class="btn btn-secondary col" value="9" onclick="nine()">
-                <input type="button" class="btn btn-secondary col" value="&times" onclick="document.calculator.display.value+='&times'">
+                <input type="button" class="btn btn-secondary col" value="&times" onclick="document.calculator.display.value+='*'">
             </div>
 
             <div class="row gap-2 px-3 my-2">
