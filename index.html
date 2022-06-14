@@ -28,36 +28,36 @@
 
             <div class="row gap-2 px-3 my-2">
                 <input type="button" class="btn btn-danger col" value="C" id="clear">
-                <input type="button" class="btn btn-secondary col" value="<-">
-                <input type="button" class="btn btn-secondary col" value="%">
-                <input type="button" class="btn btn-secondary col" value="&divide">
+                <input type="button" class="btn btn-secondary col" value="&#8592" onclick="backSpace()">
+                <input type="button" class="btn btn-secondary col" value="%" onclick="document.calculator.display.value+='%'">
+                <input type="button" class="btn btn-secondary col" value="&divide" onclick="document.calculator.display.value+='&divide'">
             </div>
 
             <div class="row gap-2 px-3 my-1">
-                <input type="button" class="btn btn-secondary col" value="7">
-                <input type="button" class="btn btn-secondary col" value="8">
-                <input type="button" class="btn btn-secondary col" value="9">
-                <input type="button" class="btn btn-secondary col" value="&times">
+                <input type="button" class="btn btn-secondary col" value="7" onclick="seven()">
+                <input type="button" class="btn btn-secondary col" value="8" onclick="eight()">
+                <input type="button" class="btn btn-secondary col" value="9" onclick="nine()">
+                <input type="button" class="btn btn-secondary col" value="&times" onclick="document.calculator.display.value+='&times'">
             </div>
 
             <div class="row gap-2 px-3 my-2">
-                <input type="button" class="btn btn-secondary col" value="4">
-                <input type="button" class="btn btn-secondary col" value="5">
-                <input type="button" class="btn btn-secondary col" value="6">
-                <input type="button" class="btn btn-secondary col" value="-">
+                <input type="button" class="btn btn-secondary col" value="4" onclick="four()">
+                <input type="button" class="btn btn-secondary col" value="5" onclick="five()">
+                <input type="button" class="btn btn-secondary col" value="6" onclick="six()">
+                <input type="button" class="btn btn-secondary col" value="-" onclick="document.calculator.display.value+='-'">
             </div>
 
             <div class="row gap-2 px-3 my-1">
-                <input type="button" class="btn btn-secondary col" value="1">
-                <input type="button" class="btn btn-secondary col" value="2">
-                <input type="button" class="btn btn-secondary col" value="3">
-                <input type="button" class="btn btn-secondary col" value="+">
+                <input type="button" class="btn btn-secondary col" value="1" onclick="one()">
+                <input type="button" class="btn btn-secondary col" value="2" onclick="two()">
+                <input type="button" class="btn btn-secondary col" value="3" onclick="three()">
+                <input type="button" class="btn btn-secondary col" value="+" onclick="document.calculator.display.value+='+'">
             </div>
 
             <div class="row gap-2 px-3 my-2">
-                <input type="button" class="btn btn-secondary col" value=".">
-                <input type="button" class="btn btn-secondary col" value="0">
-                <input type="button" class="btn btn-success col-6" value="=">
+                <input type="button" class="btn btn-secondary col" value="." onclick="dot()">
+                <input type="button" class="btn btn-secondary col" value="0" onclick="zero()">
+                <input type="button" class="btn btn-success col-6" value="=" onclick="document.calculator.display.value = eval(calculator.display.value)">
             </div>
 
         </form>
