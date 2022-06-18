@@ -1,6 +1,6 @@
 # Basic Calculator
 
-[README(portuguese)](https://github.com/IsabelaBaseggio/Hex-Color-Test/blob/main/README.pt.md)
+[README(portuguese)](https://github.com/IsabelaBaseggio/basic-calculator/blob/main/README.pt.md)
 
 #### Status: Done
 
